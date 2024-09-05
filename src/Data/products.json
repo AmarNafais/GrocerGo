@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Apples",
+        "price": 3.99,
+        "description": "Fresh red apples",
+        "image": "apple.png"
+    },
+    {
+        "id": 2,
+        "name": "Bananas",
+        "price": 2.99,
+        "description": "Ripe yellow bananas",
+        "image": "banana.png"
+    }
+]
