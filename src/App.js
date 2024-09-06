@@ -1,11 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './Components/header';
-import Footer from './Components/footer';
+import Header from './Components/Header/header';
+import Footer from './Components/Footer/footer';
 import Dashboard from './Pages/dashboard';
 import ProductPage from './Pages/productpage';
-import LoginPage from './Pages/loginpage/loginpage';
-
+import LoginPage from './Pages/LoginPage/loginpage';
 
 function App() {
   return (

@@ -1,0 +1,82 @@
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5e7d5;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.banner-content {
+    flex: 1;
+    color: #333;
+    padding-left: 50px;
+    font-family: 'Arial', sans-serif;
+}
+
+.banner h3 {
+    font-size: 24px;
+    margin: 0;
+    color: #888;
+}
+
+.banner h1 {
+    font-size: 60px;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #603F26;
+}
+
+.shop-now-btn {
+    background-color: #b4c350;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+    background-color: #9ab042;
+}
+
+.banner-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.left-arrow,
+.right-arrow {
+    background-color: white;
+    border: none;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+    background-color: #b4c350;
+    color: white;
+}

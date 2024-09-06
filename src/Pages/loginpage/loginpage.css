@@ -1,4 +1,3 @@
-/* General styles */
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +29,7 @@ html {
 
 .login-left {
     flex: 1;
-    background-color: #61A3BA;
+    background-color: #f5e7d5;
     color: white;
     display: flex;
     flex-direction: column;
@@ -93,8 +92,8 @@ html {
 .login-button {
     width: 100%;
     padding: 10px;
-    background-color: #61A3BA;
-    color: white;
+    background-color: #f5e7d5;
+    color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -102,7 +101,7 @@ html {
 }
 
 .login-button:hover {
-    background-color: #4e8396;
+    background-color: #c5b39c;
 }
 
 .separator {

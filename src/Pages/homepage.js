@@ -1,11 +1,12 @@
 import React from 'react';
-import ProductList from '../Components/productlist';
+import Header from '../Components/header';
+import Banner from '../Components/banner';
 
 const HomePage = () => (
-    <div>
-        <h2>Home - Grocery Products</h2>
-        <ProductList />
-    </div>
+  <div>
+    <Header />
+    <Banner />
+  </div>
 );
 
 export default HomePage;
