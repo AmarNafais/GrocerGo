@@ -4,7 +4,7 @@ import Header from './Components/Header/header';
 import Footer from './Components/Footer/footer';
 import Dashboard from './Pages/dashboard';
 import ProductPage from './Pages/productpage';
-import LoginPage from './Pages/LoginPage/loginpage';
+import LoginPage from './Components/Login/loginpage';
 
 function App() {
   return (
