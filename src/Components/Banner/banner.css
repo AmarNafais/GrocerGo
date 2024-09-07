@@ -2,10 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    height: 60vh; /* Decreased height */
+    width: 90%; /* Decreased width */
     background-color: #f5e7d5;
     padding: 20px;
     box-sizing: border-box;
+    margin: 50px auto; /* Center the banner and add space around */
+    border-radius: 10px; /* Optional: to give rounded corners */
 }
 
 .banner-content {
@@ -22,7 +25,7 @@
 }
 
 .banner h1 {
-    font-size: 60px;
+    font-size: 50px; /* Decreased size */
     margin: 10px 0;
     font-weight: bold;
     color: #603F26;
@@ -31,8 +34,8 @@
 .shop-now-btn {
     background-color: #b4c350;
     border: none;
-    padding: 15px 30px;
-    font-size: 18px;
+    padding: 10px 25px; /* Slightly smaller padding */
+    font-size: 16px; /* Decreased font size */
     color: white;
     cursor: pointer;
     margin-top: 20px;
@@ -50,17 +53,17 @@
 }
 
 .banner-image img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 90%; /* Reduced image size */
+    max-height: 90%; /* Reduced image size */
     object-fit: cover;
 }
 
 .arrows {
     position: absolute;
-    top: 50%;
+    top: 60%;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 85%; /* Adjusted width */
     transform: translateY(-50%);
 }
 
@@ -68,8 +71,8 @@
 .right-arrow {
     background-color: white;
     border: none;
-    padding: 15px;
-    font-size: 24px;
+    padding: 12px; /* Slightly smaller padding */
+    font-size: 20px; /* Slightly smaller font size */
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;

@@ -1,16 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './header.css';
 import LogoImage from '../../Assets/Images/logo-img.png';
 import { FaSearch, FaMapMarkerAlt, FaUser, FaShoppingCart } from 'react-icons/fa';
-import { BsChevronDown } from 'react-icons/bs'; // For dropdown arrow
 
 const Header = () => {
-  const [isDropdownOpen, setDropdownOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setDropdownOpen(!isDropdownOpen);
-  };
-
   return (
     <header className="header">
       <div className="top-bar">
@@ -36,34 +29,19 @@ const Header = () => {
             <FaUser className='icons'/>
             <span>Login & Register</span>
           </a>
-          <div className="dropdown">
-            <button className="dropdown-button" onClick={toggleDropdown}>
-              <img src="/path/to/selected-flag.png" alt="Selected Country Flag" />
-              <BsChevronDown className='icons'/>
-            </button>
-            {isDropdownOpen && (
-              <div className="dropdown-content">
-                <a href="#">
-                  <img src="/path/to/flag1.png" alt="Flag 1" /> English
-                </a>
-                <a href="#">
-                  <img src="/path/to/flag2.png" alt="Flag 2" /> Spanish
-                </a>
-                {/* Add more flags and languages as needed */}
-              </div>
-            )}
-          </div>
           <FaShoppingCart className='icons'/>
         </div>
       </div>
       <nav className="navigation">
         <a href="/">All Categories</a>
         <a href="/freshfood">Fresh Food</a>
-        <a href="/fruits&veg">Fruits & Vegetables</a>
-        <a href="/beverages">Beverages</a>
-        <a href="/babyproducts">Baby Products</a>
-        <a href="/devices">Smartphones, Tablets & Wearables</a>
-        <a href="/electronics">Electronics & Appliances</a>
+        <a href="/fruits&veg">Confectionary</a>
+        <a href="/beverages">Crisps and Snacks</a>
+        <a href="/babyproducts">Drinks</a>
+        <a href="/devices">HouseHold</a>
+        <a href="/electronics">Personal Care</a>
+        <a href="/electronics">Baby & Toddler</a>
+        <a href="/electronics">Pets</a>
       </nav>
     </header>
   );

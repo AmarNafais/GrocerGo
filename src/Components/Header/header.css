@@ -1,161 +1,107 @@
 .header {
-    background-color: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
-    z-index: 10;
-    padding: 30px 40px;
-  }
-  
-  .top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #603F26;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo h1 {
-    color: #603F26;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    margin: 0;
-  }
-  
-  .logo img {
-    height: 40px;
-    margin-right: 10px;
-  }
-  
-  .search-form {
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-    background-color: #f0f0f0;
-    padding: 11px 20px;
-    height: 40px;
-    width: 500px;
-  }
-  
-  .search-input {
-    border: none;
-    padding: 6px;
-    font-size: 16px;
-    color: rgb(34, 34, 34);
-    background: transparent;
-    flex: 1;
-    margin-left: 10px;
-  }
-  
-  .delivery-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    color: #603F26;
-  }
-  
-  .delivery-text h3 {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0; 
-  }
-  
-  .delivery-text p {
-    font-size: 14px;
-    margin: 0;
-  }
-  
-  .icon-container {
-    display: flex;
-    align-items:center;
-    gap: 15px; 
-  }
-  
-  .icon-container i, .icon-container svg {
-    font-size: 20px;
-    color: #603F26;
-  }
-  
-  .icon-container a {
-    display: flex;
-    align-items: center;
-    color: #603F26;
-    text-decoration: none;
-  }
-  
-  .icon-container a span {
-    margin-left: 5px; /* Space between icon and text */
-  }
-  
-  .dropdown {
-    position: relative;
-  }
-  
-  .dropdown-button {
-    display: flex;
-    align-items: center;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    color: #603F26;
-    gap: 5px; /* Space between flag and dropdown arrow */
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-radius: 4px;
-    margin-top: 5px;
-  }
-  
-  .dropdown-content a {
-    color: #603F26;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-  }
-  
-  .dropdown-content a img {
-    width: 20px;
-    height: 15px;
-    margin-right: 10px;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #f1f1f1;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown:hover .dropdown-button {
-    background-color: #f0f0f0;
-  }
-  
-  .navigation {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .navigation a {
-    margin: 0 15px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    font-weight: 800;
-    color: #603F26;
-    text-decoration: none;
-  }
-  
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+  padding: 20px 40px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #603F26;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  color: #603F26;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  padding: 11px 20px;
+  height: 40px;
+  width: 500px;
+}
+
+.search-input {
+  border: none;
+  padding: 6px;
+  font-size: 16px;
+  color: rgb(34, 34, 34);
+  background: transparent;
+  flex: 1;
+  margin-left: 10px;
+}
+
+.delivery-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #603F26;
+}
+
+.delivery-text h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.delivery-text p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-container i,
+.icon-container svg {
+  font-size: 20px;
+  color: #603F26;
+}
+
+.icon-container a {
+  display: flex;
+  align-items: center;
+  color: #603F26;
+  text-decoration: none;
+}
+
+.icon-container a span {
+  margin-left: 5px;
+}
+
+.navigation {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation a {
+  margin: 0 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  color: #603F26;
+  text-decoration: none;
+}
