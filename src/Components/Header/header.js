@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './header.css';
 import LogoImage from '../../Assets/Images/logo-img.png';
 import { FaSearch, FaMapMarkerAlt, FaUser, FaShoppingCart } from 'react-icons/fa';
 import CartSection from '../Cart/cart';
 
-const Header = ({ onToggleCart, cartItems, cartVisible }) => {
+const Header = ({ cartItems }) => {
+  const [cartVisible, setCartVisible] = useState(false);
+
+  const onToggleCart = () => {
+    setCartVisible(!cartVisible);
+  };
+
   return (
     <>
       <header className="header">
@@ -14,20 +20,20 @@ const Header = ({ onToggleCart, cartItems, cartVisible }) => {
             <h1>GrocerGo</h1>
           </div>
           <form className="search-form">
-            <FaSearch className="icons" />
+            <FaSearch className='icons' />
             <input type="text" placeholder="Search" className="search-input" />
           </form>
           <div className="icon-container">
-            <FaMapMarkerAlt className="icons" />
+            <FaMapMarkerAlt className='icons' />
             <div className="delivery-text">
               <h3>Deliver to</h3>
               <p>Your Address Here</p>
             </div>
             <a href="/login">
-              <FaUser className="icons" />
+              <FaUser className='icons' />
               <span>Login & Register</span>
             </a>
-            <FaShoppingCart className="icons" onClick={onToggleCart} />
+            <FaShoppingCart className='icons' onClick={onToggleCart} />
           </div>
         </div>
         <nav className="navigation">
@@ -43,8 +49,7 @@ const Header = ({ onToggleCart, cartItems, cartVisible }) => {
         </nav>
       </header>
 
-      {/* Always render CartSection and control visibility via the 'visible' class */}
-      <CartSection isVisible={cartVisible} items={cartItems} />
+      <CartSection isVisible={cartVisible} onClose={onToggleCart} items={cartItems} />
     </>
   );
 };

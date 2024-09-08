@@ -2,6 +2,10 @@ import React from 'react';
 import './cart.css';
 
 const CartSection = ({ isVisible, items, onClose }) => {
+  const calculateTotal = () => {
+    return items.reduce((total, item) => total + item.price, 0);
+  };
+
   return (
     <div className={`cart-section ${isVisible ? 'visible' : ''}`}>
       <button className="close-btn" onClick={onClose}>X</button>
@@ -21,6 +25,7 @@ const CartSection = ({ isVisible, items, onClose }) => {
         )}
       </div>
       <div className="cart-footer">
+        <span className="total-price">Total: Rs. {calculateTotal()}</span>
         <button className="checkout-btn">Checkout</button>
       </div>
     </div>

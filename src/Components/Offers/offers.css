@@ -8,9 +8,7 @@
     margin-bottom: 20px;
     color: #603F26;
     text-align: center;
-    /* Center the text */
     width: 100%;
-    /* Ensure the title takes up the full width of the container */
 }
 
 
@@ -22,7 +20,6 @@
 
 .offer-card {
     min-width: 250px;
-    /* Set a minimum width to ensure horizontal scrolling */
     margin-right: 20px;
     margin-bottom: 5px;
     background-color: white;
@@ -31,7 +28,6 @@
     text-align: center;
     border-radius: 10px;
     flex-shrink: 0;
-    /* Prevent flex items from shrinking */
 }
 
 .offer-card img {
@@ -60,14 +56,10 @@
 
 .add-btn {
     background-color: #603F26;
-    /* Color for the button */
     border: none;
     border-radius: 50%;
-    /* Make the background circular */
     width: 40px;
-    /* Adjust size to make it a circle */
     height: 40px;
-    /* Adjust size to make it a circle */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,17 +69,13 @@
 
 .add-btn:hover {
     background-color: #603F26;
-    /* Change color on hover */
 }
 
 .add-btn svg {
     color: white;
-    /* Icon color */
     font-size: 20px;
-    /* Icon size */
 }
 
-/* Optional: Hide scrollbars */
 .offers-scroll-container::-webkit-scrollbar {
     display: none;
 }

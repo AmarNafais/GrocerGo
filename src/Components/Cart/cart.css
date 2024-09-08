@@ -2,19 +2,16 @@
     position: fixed;
     top: 0;
     right: -300px;
-    /* Hidden off-screen initially */
     width: 300px;
     height: 100%;
     background: white;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
     transition: right 0.3s ease;
-    /* Smooth sliding effect */
     z-index: 1000;
 }
 
 .cart-section.visible {
     right: 0;
-    /* Slide in when visible */
 }
 
 .close-btn {
@@ -50,20 +47,27 @@
 }
 
 .cart-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    background: #f9f9f9;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
+}
+
+.total-price {
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .checkout-btn {
-    background: #007bff;
+    padding: 10px 20px;
+    background-color: #603F26;
     color: white;
     border: none;
-    padding: 10px;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+}
+
+.checkout-btn:hover {
+    background-color: #4b321f;
 }

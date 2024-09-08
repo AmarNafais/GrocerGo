@@ -13,6 +13,10 @@
   color: #603F26;
 }
 
+.top-bar a {
+  text-decoration: none;
+}
+
 .logo {
   display: flex;
   align-items: center;

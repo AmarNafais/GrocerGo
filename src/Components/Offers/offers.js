@@ -29,17 +29,16 @@ const Offers = ({ onAddToCart }) => {
     let interval;
 
     const scroll = () => {
-      // If the scroll position is at the end, reset to the start
       if (scrollContainer.scrollLeft + scrollContainer.offsetWidth >= scrollContainer.scrollWidth) {
-        scrollContainer.scrollTo({ left: 0, behavior: 'auto' }); // Instantly reset to the beginning
+        scrollContainer.scrollTo({ left: 0, behavior: 'auto' });
       } else {
-        scrollContainer.scrollBy({ left: 300, behavior: 'smooth' }); // Scroll by 300px
+        scrollContainer.scrollBy({ left: 300, behavior: 'smooth' });
       }
     };
 
-    interval = setInterval(scroll, 3000); // Scroll every 3 seconds
+    interval = setInterval(scroll, 3000);
 
-    return () => clearInterval(interval); // Clear interval on component unmount
+    return () => clearInterval(interval);
   }, []);
 
   return (

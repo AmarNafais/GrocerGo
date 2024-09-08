@@ -16,8 +16,7 @@ const HomePage = () => {
 
   return (
     <div>
-      {/* <Header onToggleCart={toggleCart} cartItems={cartItems} cartVisible={cartVisible} /> */}
-      <Dashboard onAddToCart={addToCart} /> {/* Ensure prop is passed correctly */}
+      <Dashboard onAddToCart={addToCart} />
     </div>
   );
 };
