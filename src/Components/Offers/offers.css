@@ -1,0 +1,81 @@
+.offers-container {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.offers-container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #603F26;
+    text-align: center;
+    width: 100%;
+}
+
+
+.offers-scroll-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.offer-card {
+    min-width: 250px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.offer-card img {
+    width: 75%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.offer-card h4 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.new-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #603F26;
+}
+
+.add-btn {
+    background-color: #603F26;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: #603F26;
+}
+
+.add-btn svg {
+    color: white;
+    font-size: 20px;
+}
+
+.offers-scroll-container::-webkit-scrollbar {
+    display: none;
+}
