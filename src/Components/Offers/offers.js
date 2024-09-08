@@ -46,7 +46,7 @@ const Offers = ({ onAddToCart }) => {
     <div className="offers-container">
       <h2>Offers</h2>
       <div className="offers-scroll-container" ref={scrollContainerRef}>
-        {offers.concat(offers).map((offer, index) => ( // Duplicate offers for infinite scroll
+        {offers.concat(offers).map((offer, index) => (
           <div key={index} className="offer-card">
             <img src={offer.image} alt={offer.name} />
             <h4>{offer.name}</h4>
